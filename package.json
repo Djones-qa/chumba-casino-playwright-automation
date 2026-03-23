@@ -1,0 +1,21 @@
+﻿{
+  "name": "chumba-casino-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation suite for Chumba Casino - auth, lobby, navigation and responsible gaming tests",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:lobby": "playwright test tests/lobby.spec.ts",
+    "test:navigation": "playwright test tests/navigation.spec.ts",
+    "test:responsible": "playwright test tests/responsible-gaming.spec.ts",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report"
+  },
+  "author": "Darrius Jones",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "dotenv": "^16.0.0",
+    "typescript": "^5.0.0"
+  }
+}
